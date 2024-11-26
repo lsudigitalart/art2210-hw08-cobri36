@@ -6,7 +6,7 @@ function setup() {
     createCanvas(600, 600);
     background (220);
     noStroke();
-    drawCreature(width/2, heigh/2, 100);
+    drawCreature(width/2, height/2, 100);
   }
   
   function drawCreature(x, y, size) 
@@ -16,7 +16,7 @@ function setup() {
     ellipse(x, y + size * 0.4, size * 0.8, size);
   
     //Head
-    fill(headColor);
+    fill(255, 200, 200) //pink
     ellipse(x, y, size * 0.7, size * 0.7);
   
     //Eyes
@@ -30,8 +30,8 @@ function setup() {
     ellipse(x + size * 0.6, y + size * 0.2 - armOffset, size * 0.2, size * 0.4); //right arm
     
     //Legs
-    ellipse(x - size * 0.25, y + size * 0.8 + lefOffset, size * 0.2, size * 0.2); //left leg
-    ellipse(x + size * 0.25, y + size * 0.8 - lefOffset, size * 0.2, size * 0.2); //left leg
+    ellipse(x - size * 0.25, y + size * 0.8 + legOffset, size * 0.2, size * 0.2); //left leg
+    ellipse(x + size * 0.25, y + size * 0.8 - legOffset, size * 0.2, size * 0.2); //left leg
 
     //Mouth
     fill(255, 100, 100); //red
